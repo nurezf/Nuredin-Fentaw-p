@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeading from "../SectionHeading";
 
 const PythonLogo = "/svg/python.svg";
 const TailwindCSSLogo = "/svg/tailwindcss.svg";
@@ -142,9 +143,11 @@ export const LogoList = ({ startIndex = 0 }: { startIndex?: number }) => (
 export default function LogoCloud() {
   return (
     <div className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[50px] flex flex-col gap-3 backdrop-blur-md  rounded-2xl py-5 text-white lg:mb-0 lg:max-w-[1080px] lg:gap-6">
-      <h1 className="mx-auto mb-3 w-full px-8 text-center text-sm lg:mb-0 lg:max-w-none lg:px-0 lg:text-xl">
-        Tech Stacks
-      </h1>
+      <SectionHeading
+        heading="Tech Stack"
+        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus.
+"
+      />
 
       <div
         className="relative flex w-full overflow-hidden"

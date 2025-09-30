@@ -1,13 +1,15 @@
 import * as motion from "motion/react-client";
 import type { Variants } from "motion/react";
+import SectionHeading from "../SectionHeading";
 
 export default function Experience() {
   return (
     <div style={container}>
-      <h1 className="text-6xl w-fit backdrop-blur-2xl bg-white/5 p-5 rounded-2xl text-white">
-        {" "}
-        Experiance
-      </h1>
+      <SectionHeading
+        heading="Experiance"
+        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus.
+"
+      />
       {experiences.map((exp, i) => (
         <Card key={i} i={i} {...exp} />
       ))}
