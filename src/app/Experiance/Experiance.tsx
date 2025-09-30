@@ -25,7 +25,7 @@ interface CardProps {
 }
 
 function Card({ emoji, title, subtitle, hueA, hueB, i }: CardProps) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
+  const background = `linear-gradient(306deg, #2e7d4380, #5cb57480)`; // 80 = 50% opacity
   return (
     <motion.div
       className={`card-container-${i}`}
@@ -135,27 +135,27 @@ const experiences = [
     title: "Wollo University",
     subtitle: "Software Engineering Student (2022–present)",
     hueA: 200,
-    hueB: 260,
+    hueB: 210,
   },
   {
     emoji: "💼",
-    title: "Internship at IBM",
+    title: "Internship at AppFactory",
     subtitle: "Full Stack Developer Intern (2023)",
-    hueA: 120,
-    hueB: 180,
+    hueA: 190,
+    hueB: 210,
   },
   {
     emoji: "🌐",
     title: "Freelancing",
-    subtitle: "Web Developer (2022–present)",
-    hueA: 40,
-    hueB: 80,
+    subtitle: "Web Developer (2024–present)",
+    hueA: 180,
+    hueB: 200,
   },
   {
     emoji: "🤝",
     title: "Open Source Contributor",
     subtitle: "Contributor to various open source projects (2022–present)",
-    hueA: 300,
-    hueB: 360,
+    hueA: 210,
+    hueB: 230,
   },
 ];
