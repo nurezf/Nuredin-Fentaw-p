@@ -7,7 +7,7 @@ const TypescriptLogo = "/svg/typescript.svg";
 const VercelLogo = "/svg/vercel.svg";
 const ExpressLogo = "/svg/express.svg";
 const PrismaLogo = "/svg/prisma-wordmark.svg";
-const NextjsLogo = "/svg/nextjs.svg";
+const NextjsLogo = "/svg/nextjs-wordmark.svg";
 const JavaLogo = "/svg/java.svg";
 const LaravelLogo = "/svg/laravel-wordmark.svg";
 const CPlusPlusLogo = "/svg/c-plusplus.svg";
@@ -142,9 +142,9 @@ export const LogoList = ({ startIndex = 0 }: { startIndex?: number }) => (
 export default function LogoCloud() {
   return (
     <div className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[50px] flex flex-col gap-3 backdrop-blur-md  rounded-2xl py-5 text-white lg:mb-0 lg:max-w-[1080px] lg:gap-6">
-      <h2 className="mx-auto mb-3 w-full px-8 text-center text-sm lg:mb-0 lg:max-w-none lg:px-0 lg:text-xl">
-        Leveraging state-of-the-art technologies
-      </h2>
+      <h1 className="mx-auto mb-3 w-full px-8 text-center text-sm lg:mb-0 lg:max-w-none lg:px-0 lg:text-xl">
+        Tech Stacks
+      </h1>
 
       <div
         className="relative flex w-full overflow-hidden"
@@ -172,7 +172,7 @@ export default function LogoCloud() {
       </div>
 
       <p className="mx-auto w-full max-w-[250px] text-center text-sm opacity-60 lg:max-w-none">
-        Staying ahead of the curve and surfing the waves of innovation
+        Leveraging state-of-the-art technologies
       </p>
     </div>
   );

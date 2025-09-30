@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineStart } from "react-icons/md";
+import { CiLinkedin } from "react-icons/ci";
 
 const Hero = () => {
   return (
@@ -15,8 +15,10 @@ const Hero = () => {
       </p>
       <div className="mt-6 flex space-x-4">
         <Button className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200">
-          get started
-          <MdOutlineStart />
+          LinkedIn
+          <CiLinkedin
+            style={{ color: "blue", fontSize: "30px", cursor: "pointer" }}
+          />
         </Button>
         <Button className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200">
           code
