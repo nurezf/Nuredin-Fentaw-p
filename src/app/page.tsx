@@ -5,6 +5,7 @@ import LogoCloud from "./TechStack/TechStack";
 import ScrollTriggered from "./Experiance/Experiance";
 import Projects from "./Projects/Projects";
 import Testimonial from "./Testimonial/Testimonial";
+import Contact from "./Contact/Contact";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <ScrollTriggered />
           <Projects />
           <Testimonial />
+          <Contact />
         </BackgroundVideo>
       </div>
     </div>
