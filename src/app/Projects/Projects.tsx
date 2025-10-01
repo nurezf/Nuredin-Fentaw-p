@@ -12,14 +12,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
-type Projects = {
+type Project = {
   title: string;
   description: string;
   imageUrl: string;
   projectUrl: string;
 };
 
-const projects: Projects = [
+const projects: Project[] = [
   {
     title: "Project One",
     description: "This is a description of project one.",
@@ -37,7 +37,6 @@ const projects: Projects = [
   {
     title: "Project Three",
     description: "This is a description of project three.",
-
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
     projectUrl: "https://example.com/project-three",
