@@ -10,18 +10,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+type Testimonial = {
+  name: string;
+  role: string;
+  image: string;
+  company?: string;
+  testimonial: string;
+};
 
-type Testimonial = [
-  {
-    name: string;
-    role: string;
-    image: string;
-    company?: string;
-    testimonial: string;
-  }
-];
-
-const testimonials: Testimonial = [
+const testimonials: Testimonial[] = [
   {
     name: "John Doe",
     role: "Software Engineer",
