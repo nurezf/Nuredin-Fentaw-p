@@ -16,7 +16,7 @@ export default function Home() {
           src="https://www.pexels.com/download/video/3141210/"
           className="w-full h-full align-items-start! "
         >
-          <Menu className="flex items-start w-full absolute " />
+          <Menu />
           <section id="hero">
             <Hero />
           </section>
