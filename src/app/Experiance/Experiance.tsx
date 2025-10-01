@@ -4,7 +4,10 @@ import SectionHeading from "../SectionHeading";
 
 export default function Experience() {
   return (
-    <div className="w-full max-w-2xl mx-auto px-2 sm:px-0 grid grid-cols-1  gap-6">
+    <div
+      className="w-full mb-20 max-w-2xl mx-auto px-2 sm:px-0 grid grid-cols-1  gap-6"
+      id="experiance"
+    >
       <div className="col-span-full">
         <SectionHeading
           heading="Experiance"

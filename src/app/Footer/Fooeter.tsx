@@ -1,25 +1,35 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTelegram, FaXTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Fooeter = () => {
   return (
     <div className="footer">
       <div className="flex justify-center space-x-4 p-4">
-        <a href="#" aria-label="GitHub">
+        <Link
+          href="https://github.com/nurezf"
+          target="_blank"
+          aria-label="GitHub"
+        >
           <FaGithub
             style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+            className=""
           />
-        </a>
-        <a href="#" aria-label="LinkedIn">
-          <FaLinkedin
-            style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/nuredin-fentaw-04b560365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <CiLinkedin
+            style={{ color: "white", fontSize: "30px", cursor: "pointer" }}
           />
-        </a>
-        <a href="#" aria-label="Telegram">
+        </Link>
+        <Link href="https://t.me/nurezf" target="_blank" aria-label="LinkedIn">
           <FaTelegram
-            style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+            style={{ color: "blue", fontSize: "30px", cursor: "pointer" }}
           />
-        </a>
+        </Link>
       </div>
 
       <div className="text-center p-4 text-white">

@@ -16,13 +16,22 @@ export default function Home() {
           src="https://www.pexels.com/download/video/3141210/"
           className="w-full h-full align-items-start! "
         >
-          {" "}
           <Menu className="flex items-start w-full absolute " />
-          <Hero />
-          <LogoCloud />
-          <ScrollTriggered />
-          <Projects />
-          <Testimonial />
+          <section id="hero">
+            <Hero />
+          </section>
+          <section id="techstack">
+            <LogoCloud />
+          </section>
+          <section id="experience">
+            <ScrollTriggered />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="testimonials">
+            <Testimonial />
+          </section>
           <Contact />
           <Fooeter />
         </BackgroundVideo>

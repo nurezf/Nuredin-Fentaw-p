@@ -6,7 +6,10 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <div className="backdrop-blur-2xl bg-white/5 my-8 px-2 sm:px-8 py-8 rounded-lg shadow-md w-full max-w-5xl mx-auto">
+    <div
+      className="backdrop-blur-2xl bg-white/5 my-8 px-2 sm:px-8 py-8 rounded-lg shadow-md w-full max-w-5xl mx-auto"
+      id="contact"
+    >
       <SectionHeading
         heading="Contact Me"
         subheading="Feel free to reach out for any inquiries or collaborations."

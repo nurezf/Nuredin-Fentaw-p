@@ -48,7 +48,7 @@ const projects: Projects = [
 
 const Projects = () => {
   return (
-    <div className="w-full px-2 mt-20 sm:px-8">
+    <div className="w-full px-2 mt-20 sm:px-8" id="projects">
       <SectionHeading
         heading="Projects"
         subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus."

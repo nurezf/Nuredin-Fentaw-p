@@ -2,10 +2,14 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="my-8 sm:my-16 flex flex-col items-center justify-center text-center px-4">
+    <div
+      className="my-8 sm:my-16 flex flex-col items-center justify-center text-center px-4"
+      id="hero"
+    >
       <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4">
         Welcome to My Portfolio
       </h1>
@@ -16,13 +20,28 @@ const Hero = () => {
       <div className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto items-center justify-center">
         <Button className="flex items-center gap-2 bg-white text-black hover:bg-gray-200 w-full sm:w-auto">
           LinkedIn
-          <CiLinkedin
-            style={{ color: "blue", fontSize: "30px", cursor: "pointer" }}
-          />
+          <Link
+            href="https://www.linkedin.com/in/nuredin-fentaw-04b560365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <CiLinkedin
+              style={{ color: "blue", fontSize: "30px", cursor: "pointer" }}
+            />
+          </Link>
         </Button>
         <Button className="flex items-center gap-2 bg-white text-black hover:bg-gray-200 w-full sm:w-auto">
           code
-          <FaGithub />
+          <Link
+            href="https://github.com/nurezf"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <FaGithub
+              style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+              className=""
+            />
+          </Link>
         </Button>
       </div>
     </div>
