@@ -21,7 +21,7 @@ const Fooeter = () => {
           target="_blank"
           aria-label="LinkedIn"
         >
-          <CiLinkedin
+          <FaLinkedin
             style={{ color: "white", fontSize: "30px", cursor: "pointer" }}
           />
         </Link>
