@@ -4,12 +4,13 @@ import SectionHeading from "../SectionHeading";
 
 export default function Experience() {
   return (
-    <div style={container}>
-      <SectionHeading
-        heading="Experiance"
-        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus.
-"
-      />
+    <div className="w-full max-w-2xl mx-auto px-2 sm:px-0 grid grid-cols-1  gap-6">
+      <div className="col-span-full">
+        <SectionHeading
+          heading="Experiance"
+          subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus."
+        />
+      </div>
       {experiences.map((exp, i) => (
         <Card key={i} i={i} {...exp} />
       ))}
@@ -30,7 +31,7 @@ function Card({ emoji, title, subtitle, hueA, hueB, i }: CardProps) {
   const background = `linear-gradient(306deg, #2e7d4380, #5cb57480)`; // 80 = 50% opacity
   return (
     <motion.div
-      className={`card-container-${i}`}
+      className={`card-container-${i} w-full max-w-xs mx-auto`}
       style={cardContainer}
       initial="offscreen"
       whileInView="onscreen"

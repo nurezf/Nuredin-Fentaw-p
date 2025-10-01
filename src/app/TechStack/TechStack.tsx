@@ -142,11 +142,10 @@ export const LogoList = ({ startIndex = 0 }: { startIndex?: number }) => (
 
 export default function LogoCloud() {
   return (
-    <div className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[50px] flex flex-col gap-3 backdrop-blur-md  rounded-2xl py-5 text-white lg:mb-0 lg:max-w-[1080px] lg:gap-6">
+    <div className="max-w-[720px] lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[50px] flex flex-col gap-2 sm:gap-6 backdrop-blur-md rounded-2xl py-4 px-2 sm:py-8 sm:px-8 text-white lg:mb-0 lg:max-w-[1080px]">
       <SectionHeading
         heading="Tech Stack"
-        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus.
-"
+        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus."
       />
 
       <div
@@ -158,13 +157,13 @@ export default function LogoCloud() {
             "linear-gradient(to right, transparent, black 15%, black 85%, transparent 100%)",
         }}
       >
-        <div className="flex animate-marquee-scroll whitespace-nowrap py-6">
+        <div className="flex animate-marquee-scroll whitespace-nowrap py-4 ">
           {Array.from({ length: 2 }, (_, i) => (
             <LogoList key={`list-1-${i}`} startIndex={i} />
           ))}
         </div>
         <div
-          className="flex animate-marquee-scroll whitespace-nowrap py-6"
+          className="flex animate-marquee-scroll whitespace-nowrap py-4 sm:py-6"
           style={{ animationDelay: "-20s" }}
           aria-hidden="true"
         >

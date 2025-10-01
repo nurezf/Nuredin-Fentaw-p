@@ -48,14 +48,13 @@ const projects: Projects = [
 
 const Projects = () => {
   return (
-    <div>
+    <div className="w-full px-2 mt-20 sm:px-8">
       <SectionHeading
         heading="Projects"
-        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus.
-"
+        subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus."
       />
       {/* Example project cards */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <Card
             key={index}

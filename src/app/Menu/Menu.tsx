@@ -15,13 +15,13 @@ import Link from "next/link";
 
 function Menu() {
   return (
-    <div className="flex justify-between items-center w-100vw px-4 py-2 rounded-lg  backdrop-blur-2xl bg-white/30">
+    <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto px-2 sm:px-4 py-2 rounded-lg backdrop-blur-2xl bg-white/30">
       <IoMenu
         style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
         className="block sm:hidden"
       />
-      <NavigationMenu className="w-full   text-white hidden sm:block">
-        <NavigationMenuList className="flex justify-center gap-5">
+      <NavigationMenu className="w-full text-white hidden sm:block">
+        <NavigationMenuList className="flex justify-center gap-3 sm:gap-5">
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link href="/docs">Home</Link>
