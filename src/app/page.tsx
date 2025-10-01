@@ -6,6 +6,7 @@ import ScrollTriggered from "./Experiance/Experiance";
 import Projects from "./Projects/Projects";
 import Testimonial from "./Testimonial/Testimonial";
 import Contact from "./Contact/Contact";
+import Fooeter from "./Footer/Fooeter";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Projects />
           <Testimonial />
           <Contact />
+          <Fooeter />
         </BackgroundVideo>
       </div>
     </div>
