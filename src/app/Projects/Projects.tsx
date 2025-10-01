@@ -12,14 +12,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
-type Projects = [
-  {
-    title: string;
-    description: string;
-    imageUrl: string;
-    projectUrl: string;
-  }
-];
+type Projects = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  projectUrl: string;
+};
 
 const projects: Projects = [
   {
