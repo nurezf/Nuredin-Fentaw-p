@@ -20,26 +20,26 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "John Doe",
-    role: "Software Engineer",
+    name: "Leul Aynekulu",
+    role: "Software Engineer Department Head",
     image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    company: "Tech Company",
+    company: "Wollo University",
     testimonial:
       "This is an amazing product! It has changed the way I work and I can't imagine going back to how things were before.",
   },
   {
-    name: "Jane Smith",
+    name: "Amare Smith",
     role: "Product Manager",
     image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    company: "Another Tech Company",
+    company: "AppFactory",
     testimonial:
       "I love using this product! It has made my life so much easier and I highly recommend it to anyone looking for a solution.",
   },
   {
-    name: "Alice Johnson",
-    role: "UX Designer",
+    name: "Belachew Nigatu",
+    role: "CEO",
     image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    company: "Design Studio",
+    company: "QIMEM TECHNOLOGY",
     testimonial:
       "This product is fantastic! The design is intuitive and user-friendly, making it a pleasure to use every day.",
   },

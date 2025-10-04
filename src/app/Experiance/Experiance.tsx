@@ -146,7 +146,7 @@ const experiences = [
   {
     emoji: "💼",
     title: "Internship at AppFactory",
-    subtitle: "Full Stack Developer Intern (2023)",
+    subtitle: "Full Stack Developer Intern (2025)",
     hueA: 190,
     hueB: 210,
   },
@@ -159,8 +159,8 @@ const experiences = [
   },
   {
     emoji: "🤝",
-    title: "Open Source Contributor",
-    subtitle: "Contributor to various open source projects (2022–present)",
+    title: "Internship at qimem technology",
+    subtitle: "Next.js and Laravel Full-Stack developer (2022–present)",
     hueA: 210,
     hueB: 230,
   },
