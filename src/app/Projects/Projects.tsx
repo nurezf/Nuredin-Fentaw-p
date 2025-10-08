@@ -22,24 +22,26 @@ type Project = {
 const projects: Project[] = [
   {
     title: "GameHub",
-    description: "This is a description of project one.",
+    description:
+      "Game Hub is a sleek web app built with React and TypeScript, enabling users to explore, search, and filter video games. It offers a responsive UI, dynamic game listings, genre/platform filtering, sorting options, and critic scores. Powered by Vite for rapid development, it uses custom hooks for efficient data fetching and a modular component struct",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
-    projectUrl: "https://example.com/project-one",
+    projectUrl: "https://github.com/nurezf/game-hub",
   },
   {
-    title: "Gebeta Mobile App",
-    description: "This is a description of project two.",
+    title: "Gebeta food recipe Mobile App",
+    description: "gebeta mobile app by flutter + express.js",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
-    projectUrl: "https://example.com/project-two",
+    projectUrl: "https://github.com/nurezf/Gebeta",
   },
   {
     title: "Inventory Managment",
-    description: "This is a description of project three.",
+    description:
+      "This is a modern inventory management web app built with Next.js, TypeScript, and Zustand for state management. It features a responsive UI, product CRUD operations, and dynamic tables. The project uses shadcn/ui for beautiful, accessible React components, ensuring a seamless user experience and rapid development",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
-    projectUrl: "https://example.com/project-three",
+    projectUrl: "https://github.com/nurezf/inventory-1",
   },
 ];
 
