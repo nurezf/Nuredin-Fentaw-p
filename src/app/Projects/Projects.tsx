@@ -21,21 +21,21 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Project One",
+    title: "GameHub",
     description: "This is a description of project one.",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
     projectUrl: "https://example.com/project-one",
   },
   {
-    title: "Project Two",
+    title: "Gebeta Mobile App",
     description: "This is a description of project two.",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
     projectUrl: "https://example.com/project-two",
   },
   {
-    title: "Project Three",
+    title: "Inventory Managment",
     description: "This is a description of project three.",
     imageUrl:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
