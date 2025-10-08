@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
+import Link from "next/link";
 type Project = {
   title: string;
   description: string;
@@ -24,23 +25,20 @@ const projects: Project[] = [
     title: "GameHub",
     description:
       "Game Hub is a sleek web app built with React and TypeScript, enabling users to explore, search, and filter video games. It offers a responsive UI, dynamic game listings, genre/platform filtering, sorting options, and critic scores. Powered by Vite for rapid development, it uses custom hooks for efficient data fetching and a modular component struct",
-    imageUrl:
-      "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+    imageUrl: "/gamehub.png",
     projectUrl: "https://github.com/nurezf/game-hub",
   },
   {
     title: "Gebeta food recipe Mobile App",
     description: "gebeta mobile app by flutter + express.js",
-    imageUrl:
-      "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+    imageUrl: "/gebeta.png",
     projectUrl: "https://github.com/nurezf/Gebeta",
   },
   {
     title: "Inventory Managment",
     description:
       "This is a modern inventory management web app built with Next.js, TypeScript, and Zustand for state management. It features a responsive UI, product CRUD operations, and dynamic tables. The project uses shadcn/ui for beautiful, accessible React components, ensuring a seamless user experience and rapid development",
-    imageUrl:
-      "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+    imageUrl: "/inventory.png",
     projectUrl: "https://github.com/nurezf/inventory-1",
   },
 ];
@@ -87,10 +85,15 @@ const Projects = () => {
                   }}
                 />
               </Button>
-              <Button className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200">
+              <a
+                href={project.projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200 px-4 py-2 rounded-md"
+              >
                 code
                 <FaGithub />
-              </Button>
+              </a>
             </CardFooter>
           </Card>
         ))}
