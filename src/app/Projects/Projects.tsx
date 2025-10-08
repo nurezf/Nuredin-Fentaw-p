@@ -65,7 +65,7 @@ const Projects = () => {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="rounded-t-lg"
+                className="rounded-t-lg h-[200px] object-cover w-full"
               />
             </a>
             <CardHeader>
