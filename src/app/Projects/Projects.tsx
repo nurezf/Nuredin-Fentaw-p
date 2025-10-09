@@ -27,12 +27,14 @@ const projects: Project[] = [
       "Game Hub is a sleek web app built with React and TypeScript, enabling users to explore, search, and filter video games. It offers a responsive UI, dynamic game listings, genre/platform filtering, sorting options, and critic scores. Powered by Vite for rapid development, it uses custom hooks for efficient data fetching and a modular component struct",
     imageUrl: "/gamehub.png",
     projectUrl: "https://github.com/nurezf/game-hub",
+    previewUrl: "https://game-hub-green-ten.vercel.app/",
   },
   {
     title: "Gebeta food recipe Mobile App",
     description: "gebeta mobile app by flutter + express.js",
     imageUrl: "/gebeta.png",
     projectUrl: "https://github.com/nurezf/Gebeta",
+    previewUrl: "/",
   },
   {
     title: "Inventory Managment",
@@ -40,6 +42,7 @@ const projects: Project[] = [
       "This is a modern inventory management web app built with Next.js, TypeScript, and Zustand for state management. It features a responsive UI, product CRUD operations, and dynamic tables. The project uses shadcn/ui for beautiful, accessible React components, ensuring a seamless user experience and rapid development",
     imageUrl: "/inventory.png",
     projectUrl: "https://github.com/nurezf/inventory-1",
+    previewUrl: "/",
   },
 ];
 
@@ -75,16 +78,18 @@ const Projects = () => {
               <p>{project.description}</p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200">
-                preview
-                <FaRegEye
-                  style={{
-                    color: "black",
-                    fontSize: "30px",
-                    cursor: "pointer",
-                  }}
-                />
-              </Button>
+              <Link href={project.previewUrl} target="_blank">
+                <Button className="mt-6 flex items-center gap-2 bg-white text-black hover:bg-gray-200">
+                  preview
+                  <FaRegEye
+                    style={{
+                      color: "black",
+                      fontSize: "30px",
+                      cursor: "pointer",
+                    }}
+                  />
+                </Button>
+              </Link>
               <a
                 href={project.projectUrl}
                 target="_blank"
