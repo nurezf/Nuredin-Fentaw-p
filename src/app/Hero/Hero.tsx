@@ -38,7 +38,7 @@ const Hero = () => {
             aria-label="GitHub"
           >
             <FaGithub
-              style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+              style={{ color: "black", fontSize: "24px", cursor: "pointer" }}
               className=""
             />
           </Link>
