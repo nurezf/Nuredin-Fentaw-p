@@ -18,6 +18,7 @@ type Project = {
   description: string;
   imageUrl: string;
   projectUrl: string;
+  previewUrl: string;
 };
 
 const projects: Project[] = [
