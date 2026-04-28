@@ -4,163 +4,144 @@ import SectionHeading from "../SectionHeading";
 
 export default function Experience() {
   return (
-    <div
-      className="w-full mb-20 max-w-2xl mx-auto px-2 sm:px-0 grid grid-cols-1  gap-6"
+    <section
       id="experiance"
+      className="w-full max-w-6xl mx-auto px-4 sm:px-6 mb-20"
     >
-      <div className="col-span-full">
-        <SectionHeading
-          heading="Experiance"
-          subheading="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, doloribus."
-        />
+      <SectionHeading
+        heading="Experience"
+        subheading="A summary of my most meaningful roles, internships, and freelance work so far."
+      />
+
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        {experiences.map((experience, index) => (
+          <ExperienceCard
+            key={experience.title}
+            index={index}
+            {...experience}
+          />
+        ))}
       </div>
-      {experiences.map((exp, i) => (
-        <Card key={i} i={i} {...exp} />
-      ))}
-    </div>
+    </section>
   );
 }
 
-interface CardProps {
+interface ExperienceProps {
   emoji: string;
   title: string;
   subtitle: string;
+  period: string;
+  description: string;
   hueA: number;
   hueB: number;
-  i: number;
+  index: number;
 }
 
-function Card({ emoji, title, subtitle, hueA, hueB, i }: CardProps) {
-  const background = `linear-gradient(306deg, #2e7d4380, #5cb57480)`; // 80 = 50% opacity
+function ExperienceCard({
+  emoji,
+  title,
+  subtitle,
+  period,
+  description,
+  hueA,
+  hueB,
+  index,
+}: ExperienceProps) {
+  const gradient = `linear-gradient(135deg, hsl(${hueA}, 90%, 55%), hsl(${hueB}, 90%, 60%))`;
+
   return (
-    <motion.div
-      className={`card-container-${i} w-full max-w-xs mx-auto`}
-      style={cardContainer}
+    <motion.article
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ amount: 0.8 }}
+      viewport={{ once: true, amount: 0.45 }}
+      variants={cardVariants}
+      className="relative overflow-hidden rounded-2xl sm:rounded-[2rem] border border-white/10 bg-white/5 p-4 sm:p-6 shadow-2xl shadow-black/10 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-primary/40 sm:p-8"
     >
-      <div style={{ ...splash, background }} />
-      <motion.div style={card} variants={cardVariants} className="card">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <span style={{ fontSize: 64 }}>{emoji}</span>
-          <h2
-            style={{
-              fontSize: 24,
-              margin: "16px 0 4px 0",
-              textAlign: "center",
-            }}
-          >
-            {title}
-          </h2>
-          <p style={{ fontSize: 16, opacity: 0.8, textAlign: "center" }}>
+      <div
+        className="absolute -left-4 top-4 h-16 w-16 sm:h-20 sm:w-20 rounded-full opacity-30 blur-3xl sm:-left-8 sm:top-8"
+        style={{ background: gradient }}
+      />
+      <div className="relative flex items-start gap-3 sm:gap-5">
+        <div className="grid h-12 w-12 sm:h-16 sm:w-16 place-items-center rounded-2xl sm:rounded-3xl bg-slate-950/60 text-2xl sm:text-3xl shadow-inner shadow-black/20">
+          {emoji}
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-sky-300/90">
             {subtitle}
           </p>
+          <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl font-semibold text-white sm:text-2xl">
+            {title}
+          </h3>
+          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            {description}
+          </p>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+
+      <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-2 sm:gap-3 rounded-2xl sm:rounded-3xl bg-slate-950/50 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-slate-200 ring-1 ring-white/10">
+        <span className="font-medium text-sky-200">{period}</span>
+        <span className="rounded-full bg-white/10 px-2 py-1 sm:px-3 text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-slate-200">
+          Role overview
+        </span>
+      </div>
+    </motion.article>
   );
 }
 
 const cardVariants: Variants = {
   offscreen: {
-    y: 300,
+    opacity: 0,
+    y: 30,
   },
   onscreen: {
-    y: 50,
-    rotate: -10,
+    opacity: 1,
+    y: 0,
     transition: {
       type: "spring",
-      bounce: 0.4,
-      duration: 0.8,
+      bounce: 0.2,
+      duration: 0.6,
     },
   },
 };
-
-const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
-
-/**
- * ==============   Styles   ================
- */
-
-const container: React.CSSProperties = {
-  margin: "100px auto",
-  maxWidth: 500,
-  paddingBottom: 100,
-  width: "100%",
-  display: "grid",
-  gridTemplateColumns: "1fr, 1fr",
-};
-
-const cardContainer: React.CSSProperties = {
-  overflow: "hidden",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  position: "relative",
-  paddingTop: 20,
-  marginBottom: -120,
-};
-
-const splash: React.CSSProperties = {
-  position: "absolute",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  clipPath: `path("M 0 303.5 C 0 292.454 8.995 285.101 20 283.5 L 460 219.5 C 470.085 218.033 480 228.454 480 239.5 L 500 430 C 500 441.046 491.046 450 480 450 L 20 450 C 8.954 450 0 441.046 0 430 Z")`,
-};
-
-const card: React.CSSProperties = {
-  fontSize: 164,
-  width: 300,
-  height: 430,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  borderRadius: 20,
-  background: "#f5f5f5",
-  boxShadow:
-    "0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075), 0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075), 0 0 16px hsl(0deg 0% 0% / 0.075)",
-  transformOrigin: "10% 60%",
-};
-
-/**
- * ==============   Data   ================
- */
 
 const experiences = [
   {
     emoji: "🎓",
     title: "Wollo University",
-    subtitle: "Software Engineering Student (2022–present)",
+    subtitle: "Software Engineering Student",
+    period: "2022 — present",
+    description:
+      "Studying software engineering with a strong focus on web development, system architecture, and collaborative product delivery.",
     hueA: 200,
     hueB: 210,
   },
   {
     emoji: "💼",
-    title: "Internship at AppFactory",
-    subtitle: "Full Stack Developer Intern (2025)",
+    title: "AppFactory Internship",
+    subtitle: "Full Stack Developer Intern",
+    period: "2025",
+    description:
+      "Supported web application development across React and backend services, while contributing to testing, documentation, and deployment workflows.",
     hueA: 190,
     hueB: 210,
   },
   {
     emoji: "🌐",
     title: "Freelancing",
-    subtitle: "Web Developer (2024–present)",
+    subtitle: "Web Developer",
+    period: "2024 — present",
+    description:
+      "Built modern websites and apps for small businesses using responsive design, clean interfaces, and performance-first practices.",
     hueA: 180,
     hueB: 200,
   },
   {
     emoji: "🤝",
-    title: "Internship at qimem technology",
-    subtitle: "Next.js and Laravel Full-Stack developer (2022–present)",
+    title: "MKF's ICT Solution Internship",
+    subtitle: "Next.js & node.js Full Stack",
+    period: "2022 — present",
+    description:
+      "Delivered full-stack features using Next.js and Node.js, from UI components to API integration and deployment automation.",
     hueA: 210,
     hueB: 230,
   },
