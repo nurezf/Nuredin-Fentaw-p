@@ -4,6 +4,7 @@ import Hero from "./Hero/Hero";
 import LogoCloud from "./TechStack/TechStack";
 import ScrollTriggered from "./Experiance/Experiance";
 import Projects from "./Projects/Projects";
+import Services from "./Services/Services";
 import Testimonial from "./Testimonial/Testimonial";
 import Contact from "./Contact/Contact";
 import Fooeter from "./Footer/Fooeter";
@@ -28,6 +29,9 @@ export default function Home() {
           </section>
           <section id="projects">
             <Projects />
+          </section>
+          <section id="services">
+            <Services />
           </section>
           <section id="testimonials">
             <Testimonial />
