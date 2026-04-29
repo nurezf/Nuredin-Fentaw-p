@@ -22,26 +22,28 @@ const testimonials: Testimonial[] = [
   {
     name: "Leul Aynekulu",
     role: "Software Engineer Department Head",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    image: "/leul.jpg",
     company: "Wollo University",
     testimonial:
-      "This is an amazing product! It has changed the way I work and I can't imagine going back to how things were before.",
+      "Nuredin Fentaw is an exceptional software engineer with a strong work ethic and a passion for learning. He consistently delivers high-quality code and is a valuable asset to any team.",
   },
   {
-    name: "Amare Smith",
-    role: "Product Manager",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    company: "AppFactory",
+    name: "Mubarek Mohammed",
+    role: "CEO and Founder of MKF's ICT Solutions",
+    image:
+      "https://media.istockphoto.com/id/176221393/photo/businessman-portrait-silhouette-and-a-mysterious-face.jpg?s=1024x1024&w=is&k=20&c=E3oXFCGxWa1C87Kqj1RP_9rwz-QuencmTdJVY2-59xM=",
+    company: "MKF's ICT Solutions",
     testimonial:
-      "I love using this product! It has made my life so much easier and I highly recommend it to anyone looking for a solution.",
+      "Nuredin Fentaw is a talented software engineer who has made significant contributions to our projects. His technical skills and collaborative approach make him a pleasure to work with.",
   },
   {
-    name: "Belachew Nigatu",
-    role: "CEO",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    company: "QIMEM TECHNOLOGY",
+    name: "Anwar Andargie",
+    role: "freelance software engineer",
+    image:
+      "https://media.istockphoto.com/id/176221393/photo/businessman-portrait-silhouette-and-a-mysterious-face.jpg?s=1024x1024&w=is&k=20&c=E3oXFCGxWa1C87Kqj1RP_9rwz-QuencmTdJVY2-59xM=",
+    company: "Upwork",
     testimonial:
-      "This product is fantastic! The design is intuitive and user-friendly, making it a pleasure to use every day.",
+      "Nuredin Fentaw is very professional and delivers high-quality work on time. He is a great communicator and always goes the extra mile to ensure client satisfaction. I highly recommend him for any software engineering project.",
   },
 ];
 

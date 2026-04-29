@@ -23,6 +23,22 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "HakimAi",
+    description:
+      "HakimAI is a cutting-edge AI-powered medical diagnosis web app built with Next.js, TypeScript, and Zustand for state management. It features a sleek, responsive UI and leverages shadcn/ui for beautiful, accessible React components. HakimAI provides users with accurate medical insights and recommendations based on their symptoms, making healthcare more accessible and efficient",
+    imageUrl: "/hakimai.png",
+    projectUrl: "https://github.com/nurezf/symthom-ai",
+    previewUrl: "/",
+  },
+  {
+    title: "E-learning Platform for Darul Arqam",
+    description:
+      "An e-learning platform built with React and Node.js for Darul Arqam, featuring a modern UI and comprehensive course management. The platform allows students to access course materials, and track their progress, while teachers can create and manage courses, grade assignments, and communicate with students. It provides a seamless online learning experience for the Darul Arqam community.",
+    imageUrl: "/darul.png",
+    projectUrl: "https://github.com/nurezf/darul_alarqem",
+    previewUrl: "https://darul-alarqem.vercel.app/student/home",
+  },
+  {
     title: "GameHub",
     description:
       "Game Hub is a sleek web app built with React and TypeScript, enabling users to explore, search, and filter video games. It offers a responsive UI, dynamic game listings, genre/platform filtering, sorting options, and critic scores. Powered by Vite for rapid development, it uses custom hooks for efficient data fetching and a modular component struct",
@@ -32,7 +48,8 @@ const projects: Project[] = [
   },
   {
     title: "Gebeta food recipe Mobile App",
-    description: "gebeta mobile app by flutter + express.js",
+    description:
+      "gebeta mobile app by flutter + express.js. it is a food recipe app that allows users to search for recipes, view recipe details, and save their favorite recipes. The app also has a feature that allows users to create their own recipes and share them with others.",
     imageUrl: "/gebeta.png",
     projectUrl: "https://github.com/nurezf/Gebeta",
     previewUrl: "/",
